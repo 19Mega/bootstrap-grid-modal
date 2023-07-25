@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- global-div -->
+    <div>
+
+      <!-- nav-bar -->
+      <div>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary my-2">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 fw-bolder" aria-current="page" href="#">Instagram</a>
+                    </li>                   
+
+                </ul>
+
+                <!-- button + modal -->
+                <button type="button" class="btn btn-success me-5" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create new post</button>
+              
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Caption:</label>
+                                    <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                                  </div>
+
+                                  <button type="button" class="btn btn-outline-secondary fs-5">
+                                    <i class="bi bi-camera-fill"></i>
+                                  </button>                                  
+                                  
+                                  <button type="button" class="btn btn-outline-secondary fs-5">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                  </button>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end button + modal -->
+
+                <!-- dropdown -->
+                    <div class="dropdown me-5">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-gear-fill"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item active" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                <!-- end-dropdown -->
+
+              </div>
+            </div>
+          </nav>
+
+      </div> 
+      <!-- end nav-bar -->
+
+    <br>
+
+    <!-- grid(grilla) -->
+    <div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="bi bi-grid-3x3"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <i class="bi bi-square-fill"></i>
+          </button>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          
+          <div class="container">
+            <div class="row my-2"> 
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                 <img src="img1.jpg" class="img-thumbnail" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail" alt="...">
+              </div>
+            </div>
+
+            <div class="row my-2"> 
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                 <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+            </div>
+
+            <div class="row my-2"> 
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                 <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+              <div class="col-6 col-md-4">
+                <img src="img1.jpg" class="img-thumbnail m-1" alt="...">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                    
+          <div class="row my-5 justify-content-md-center">
+            <div class="col-12">
+              <div class="card mx-auto" style="width: 30rem;">
+                <div class="card-header">
+                  <div class="d-flex">
+                    <div class="p-2">Titulo de la imagen</div>
+                    <div class="ms-auto p-2">25/23</div>
+                  </div>
+                </div>
+                <img src="img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>100 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-5 justify-content-md-center">
+            <div class="col-12">
+              <div class="card mx-auto" style="width: 30rem;">
+                <div class="card-header">
+                  <div class="d-flex">
+                    <div class="p-2">Titulo de la imagen</div>
+                    <div class="ms-auto p-2">25/23</div>
+                  </div>
+                </div>
+                <img src="img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>100 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-5 justify-content-md-center">
+            <div class="col-12">
+              <div class="card mx-auto" style="width: 30rem;">
+                <div class="card-header">
+                  <div class="d-flex">
+                    <div class="p-2">Titulo de la imagen</div>
+                    <div class="ms-auto p-2">25/23</div>
+                  </div>
+                </div>
+                <img src="img2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text"><strong>100 Likes</strong></p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div> 
+    <!-- end grid(grilla) -->
+
+  </div>
+  <!-- global-div -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+
+</html>
